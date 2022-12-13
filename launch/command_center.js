@@ -1,5 +1,6 @@
 const { Input } = require('enquirer');
-const chalk = require('chalk')
+const chalk = require('chalk');
+const { lines } = require('./lines');
 
 const cmd = chalk.blue.bold("🔗")
 const first_prompt = new Input({
@@ -8,7 +9,9 @@ const first_prompt = new Input({
 });
  
 first_prompt.run()
-  .then(answer => console.log('Username:', answer))
+  .then(answer => {
+    lines(answer)
+  })
   .catch(console.error);
 
 module.exports = first_prompt;
