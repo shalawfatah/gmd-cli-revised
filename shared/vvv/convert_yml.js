@@ -1,7 +1,7 @@
 const fs   = require('fs');
 const yaml = require('js-yaml');
-const config_path = require('../paths/config_path');
-const username = require("../paths/username");
+const config_path = require('../../utilities/config_path');
+const username = require("../../utilities/username");
 
 module.exports = (name, hosts) => {
   const user = username()

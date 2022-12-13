@@ -1,13 +1,13 @@
 const { execFileSync } = require('node:child_process');
-const vagrant_prompt = require('../prompts/vagrant_prompt');
-const username = require('../paths/username');
-const sage_install = require('../prompts/sage_install');
+const vagrant_prompt = require('../vvv/vagrant_prompt');
+const username = require('../../utilities/username');
+const sage_prompt = require('../sage/sage_prompt');
 const sage_installation = require('./sage_installation');
 
 module.exports = async (name) => {
     const user = username()
     const vagrant = await vagrant_prompt()
-    const sage = await sage_install()
+    const sage = await sage_prompt()
        
     await vagrant.run()
         .then(async answer => {

@@ -1,5 +1,5 @@
 const { wp_command } = require("../wp/custom_wp/wp_command");
-
+const helper = require("../utilities/help")
 module.exports.lines = (word) => {
  switch(word) {
     case "gmd wp": 
@@ -18,7 +18,7 @@ module.exports.lines = (word) => {
         console.log("headless gatsby function 5");
         break;
     case "gmd --help":
-        console.log("See all commands 6")
+        helper();
         break;
     default:
         console.log("Type gmd --help to see all available commands")
