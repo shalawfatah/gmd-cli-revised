@@ -1,0 +1,30 @@
+{
+    "name": "gmd-dev",
+    "version": "1.0.0",
+    "description": "GMD CLI is to simplify building websites.",
+    "bin": {
+      "gmd-dev": "index.js"
+    },
+    "dependencies": {
+      "chalk": "^4.1.2",
+      "cli-welcome": "^2.2.2",
+      "enquirer": "^2.3.6",
+      "js-yaml": "^4.1.0",
+      "log-symbols": "^5.1.0",
+      "shelljs": "^0.8.5",
+      "yamljs": "^0.3.0"
+    },
+    "keywords": [
+      "gmd",
+      "gmd-cli",
+      "cli"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "author": {
+      "name": "@gmd_devs",
+      "email": "gmd_devs@glaciermediadigital.ca",
+      "url": "https://glaciermediadigital.ca"
+    }
+  }
+  
