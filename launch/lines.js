@@ -3,6 +3,7 @@ const helper = require("../utilities/help");
 const { wp_sage_command } = require("../wp/wp_sage/wp_sage_command");
 const { wp_multisite_command } = require("../wp/multisite_wp/wp_multisite_command");
 const { wp_headless_command } = require("../wp/headless_wp/wp_headless_command");
+
 module.exports.lines = (word) => {
  switch(word) {
     case "gmd wp": 

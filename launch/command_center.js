@@ -5,7 +5,7 @@ const { lines } = require('./lines');
 const cmd = chalk.blue.bold("🔗")
 const first_prompt = new Input({
   name: 'question',
-  message: cmd
+  message: cmd,
 });
  
 first_prompt.run()
