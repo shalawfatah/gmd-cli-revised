@@ -1,10 +1,10 @@
 const convert_yaml = require('../../shared/vvv/convert_yml');
-const vagrant_no_sage = require('../../shared/vvv/vagrant_no_sage');
+const vagrant_reload = require('../../shared/vvv/vagrant_reload');
 
-module.exports.custom_wp_function = async (name) => {
+module.exports.wp_sage = async (name) => {
     try {    
         await convert_yaml(name, name)
-        await vagrant_no_sage(result)
+        await vagrant_reload(result)
       } catch (error) {
         console.log('Good bye 👋')
       }
